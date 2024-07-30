@@ -97,7 +97,7 @@ function Addstudent() {
             } />
           </div>
           <div>
-            <label htmlFor="desg">feedback:</label>
+            <label  data-testid="feed" htmlFor="desg">feedback:</label>
             <input type="text" name="back" className="form-control" onChange={(e) =>
               setInputData({ ...inputData, back: e.target.value })
             } />
@@ -123,7 +123,7 @@ function Addstudent() {
           </div>
           <br />
           <center>
-            <button className="btn btn-info ">Submit</button>
+            <button role="sub-id" className="btn btn-info ">Submit</button>
           </center>
         </form>
       </div>

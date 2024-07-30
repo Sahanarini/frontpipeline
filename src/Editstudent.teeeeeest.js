@@ -4,6 +4,9 @@ import { render, screen } from '@testing-library/react';
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import Editstudent from './Editstudent';
+import { useNavigate } from 'react-router-dom'
+import axios from 'axios';
+import MockAdapter from 'axios-mock-adapter';
  
 jest.mock('axios');
 jest.mock('react-router-dom');
